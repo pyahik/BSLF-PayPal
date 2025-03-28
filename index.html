@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pay BSLF Foundation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 40px; }
+    .logo {
+      max-width: 160px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background-color: #0070ba;
+      color: white;
+      padding: 16px 28px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    .secondary {
+      background-color: #ccc;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Replace the src below with the actual logo URL -->
+  <img class="logo" src="https://via.placeholder.com/160x160?text=BSLF+Logo" alt="BSLF Foundation Logo">
+
+  <h1>Pay BSLF Foundation</h1>
+  <p>Tap the button below to continue to PayPal and enter any amount you’d like.</p>
+
+  <button class="btn" onclick="openPayPal()">Donate via PayPal</button>
+
+  <p style="margin-top: 30px;">
+    Or <a class="btn secondary" href="https://www.paypal.com/qrcodes/managed/6f8e5d90-1d08-49ed-92d1-43adca6ff97b">Use PayPal QR link</a>
+  </p>
+
+  <script>
+    function openPayPal() {
+      window.location.href = "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=admin@bslffoundation.org&currency_code=USD";
+    }
+  </script>
+</body>
+</html>
